@@ -1,27 +1,26 @@
-/* TODO: style the html */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
     font-size: 18px;
 }
 
-ul li {
-    list-style: none;
+ul {
+    list-style-type: none;
 }
 
-
-.check {
+ul.check i {
     color: #2fcc71;
     font-size: 25px;
-
 }
 
-.star {
+ul.star i {
     color: coral;
     font-size: 25px;
 }
 
-.contact {
+ul.contact i {
     color: #3498da;
     font-size: 25px;
 }
