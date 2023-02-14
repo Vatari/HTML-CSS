@@ -1,0 +1,252 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap');
+
+
+:root {
+    --clr-grey-light: #efefef;
+    --clr-dark: #222222;
+    --clr-whit: #fff;
+    --clr-darksub: #4c4c4c;
+    --pad-section: 5rem;
+}
+
+
+body {
+    padding: 32px;
+    font-family: "Raleway", sans-serif;
+    color: var(--clr-dark);
+}
+
+.section {
+    background-color: var(--clr-grey-light);
+    padding: 5rem;
+    margin-bottom: 2rem;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.section-item--wide {
+
+    width: 55%;
+}
+
+.section-item--narrow {
+    width: calc(45% - 6rem)
+}
+
+.title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
+.title .accent {
+    font-weight: bold;
+
+}
+
+.divider {
+    background-color: var(--clr-dark);
+}
+
+.divider.divider--vertical {
+    width: 1px;
+    height: 5rem;
+}
+
+.divider.divider--horizontal {
+    width: 5rem;
+    height: 1px;
+}
+
+header {
+
+    display: flex;
+    justify-content: end;
+
+}
+
+header .btn--menu {
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+    margin-right: 30px;
+    border: none;
+
+
+}
+
+.btn--menu .btn__text {
+    padding-right: 10px;
+    text-transform: uppercase;
+}
+
+.btn__icon {
+    font-size: 20px;
+    line-height: 1px;
+}
+
+
+
+#hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#hero .info {
+    width: 45%;
+}
+
+#hero .info__title {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
+#hero .info__title .accent {
+    font-weight: bold;
+}
+
+.info__desc {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+#hero .hero__img {
+    position: absolute;
+    bottom: 0px;
+    right: var(--pad-section);
+    width: 45%;
+}
+
+#purpose {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#purpose .title__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+#purpose .title__wrapper .title {
+    margin-bottom: unset;
+    margin-left: 2.5rem;
+}
+
+
+#purpose .info__desc {
+    margin-bottom: 2rem;
+}
+
+#purpose .socials {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#purpose .socials .social__link {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--clr-darksub);
+    color: var(--clr-whit);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#poster.section {
+    padding: unset;
+}
+
+#poster .bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#gallery img {
+    width: 33.33%;
+    position: relative;
+    z-index: 1;
+}
+
+#gallery img:nth-child(2) {
+    transform: scale(1.5);
+    z-index: 2;
+}
+
+
+#contacts .contacts-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contacts .info__desc {
+    margin-bottom: 2.5rem;
+}
+
+
+#contacts .form {
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+        "email subject"
+        "msg msg"
+        "btn btn";
+
+    margin-bottom: 130px;
+
+}
+
+#contacts .form .email {
+    grid-area: email;
+    border: 1px solid var(--clr-dark);
+    padding: 0.5rem;
+    background: transparent;
+
+}
+
+#contacts .form .subject {
+    grid-area: subject;
+    border: 1px solid var(--clr-dark);
+    padding: 0.5rem;
+    background: transparent;
+
+
+
+}
+
+#contacts .form .msg {
+    grid-area: msg;
+    border: 1px solid var(--clr-dark);
+    padding: 0.5rem;
+    background: transparent;
+
+
+
+}
+
+#contacts .form .btn {
+    grid-area: btn;
+    border: 1px solid var(--clr-dark);
+    background-color: var(--clr-dark);
+    color: var(--clr-whit);
+    text-transform: uppercase;
+    padding: 0.5rem;
+
+}
