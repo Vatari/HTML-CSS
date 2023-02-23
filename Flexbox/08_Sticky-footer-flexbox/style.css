@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+
+}
+
+header,
+main {
+    padding-left: 20px;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+header p {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+
+footer {
+
+    height: 5vh;
+    background-color: rgb(102, 102, 102);
+}
+
+footer {
+    align-items: center;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+}
